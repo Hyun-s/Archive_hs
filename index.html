@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <base href="/">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="profile">
+                <div class="profile-img">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h1>Seongjun Park</h1>
+                <p>Software Engineer & Developer</p>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#about" class="nav-link active">About</a></li>
+                    <li><a href="#cv" class="nav-link">CV</a></li>
+                    <li><a href="#calendar" class="nav-link">Calendar</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- About Section -->
+            <section id="about" class="section active">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Hello! I'm Seongjun Park, a passionate software engineer with expertise in web development, cloud technologies, and system architecture.</p>
+                        <p>With over 5 years of experience in the industry, I specialize in creating scalable applications and solving complex technical challenges.</p>
+                        <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or hiking in the mountains.</p>
+                    </div>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <div class="skill-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Git</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CV Section -->
+            <section id="cv" class="section">
+                <h2>Curriculum Vitae</h2>
+                <div class="cv-content">
+                    <div class="experience">
+                        <h3>Professional Experience</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2022 - Present</div>
+                                <div class="timeline-content">
+                                    <h4>Senior Software Engineer</h4>
+                                    <p>TechCorp Inc.</p>
+                                    <p>Leading development of scalable microservices architecture and mentoring junior developers.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2020 - 2022</div>
+                                <div class="timeline-content">
+                                    <h4>Software Engineer</h4>
+                                    <p>InnovateLab Ltd.</p>
+                                    <p>Developed and maintained enterprise web applications using modern JavaScript frameworks.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2018 - 2020</div>
+                                <div class="timeline-content">
+                                    <h4>Junior Developer</h4>
+                                    <p>Digital Solutions Co.</p>
+                                    <p>Implemented responsive web designs and collaborated with UX/UI designers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education">
+                        <h3>Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2014 - 2018</div>
+                                <div class="timeline-content">
+                                    <h4>Bachelor of Science in Computer Science</h4>
+                                    <p>University of Technology</p>
+                                    <p>Graduated with honors, specialization in Software Engineering</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Calendar Section -->
+            <section id="calendar" class="section">
+                <h2>Personal Calendar</h2>
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                        <h3 class="current-month">May 2026</h3>
+                        <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="weekday">Sun</div>
+                        <div class="weekday">Mon</div>
+                        <div class="weekday">Tue</div>
+                        <div class="weekday">Wed</div>
+                        <div class="weekday">Thu</div>
+                        <div class="weekday">Fri</div>
+                        <div class="weekday">Sat</div>
+                        <!-- Calendar days will be populated by JavaScript -->
+                    </div>
+                    <div class="events-list">
+                        <h4>Upcoming Events</h4>
+                        <div id="events-container">
+                            <!-- Events will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section">
+                <h2>Contact Information</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>seongjun.park@email.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Seoul, South Korea</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-medium-m"></i></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Seongjun Park. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
