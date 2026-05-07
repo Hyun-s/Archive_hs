@@ -1,14 +1,15 @@
-// Modern CV and Calendar Application
+// Modern CV and Calendar Application - Simplified
 document.addEventListener('DOMContentLoaded', function() {
     // Navigation functionality
     const navLinks = document.querySelectorAll('.nav-link');
     const sections = document.querySelectorAll('.section');
 
-    // Handle navigation clicks
+    // Set up click handlers for navigation
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
 
+            // Get target section ID
             const targetId = this.getAttribute('href').substring(1);
 
             // Hide all sections
@@ -19,30 +20,30 @@ document.addEventListener('DOMContentLoaded', function() {
             // Remove active class from all links
             navLinks.forEach(l => l.classList.remove('active'));
 
-            // Add active class to clicked link
-            this.classList.add('active');
-
-            // Show corresponding section
+            // Show target section
             const targetSection = document.getElementById(targetId);
             if (targetSection) {
                 targetSection.classList.add('active');
             }
+
+            // Make this link active
+            this.classList.add('active');
+
+            // Update URL hash
+            window.location.hash = targetId;
         });
     });
 
-    // Handle hash change (for direct URL access)
-    window.addEventListener('hashchange', function() {
+    // Handle page load with hash
+    window.addEventListener('load', function() {
         const hash = window.location.hash.substring(1);
         if (hash) {
-            // Hide all sections
+            // Show the section specified in hash
             sections.forEach(section => {
                 section.classList.remove('active');
             });
-
-            // Remove active class from all links
             navLinks.forEach(l => l.classList.remove('active'));
 
-            // Activate corresponding section and link
             const targetSection = document.getElementById(hash);
             const targetLink = document.querySelector(`[href="#${hash}"]`);
 
@@ -53,42 +54,31 @@ document.addEventListener('DOMContentLoaded', function() {
             if (targetLink) {
                 targetLink.classList.add('active');
             }
+        } else {
+            // Default to first section
+            if (sections.length > 0) {
+                sections[0].classList.add('active');
+                if (navLinks.length > 0) {
+                    navLinks[0].classList.add('active');
+                }
+            }
         }
     });
 
-    // Initialize based on current hash or default to first section
-    function initializePage() {
-        const hash = window.location.hash.substring(1);
-        const activeSection = hash ? document.getElementById(hash) : document.querySelector('.section');
-        const activeLink = hash ? document.querySelector(`[href="#${hash}"]`) : document.querySelector('.nav-link');
+    // Initialize calendar
+    initializeCalendar();
+});
 
-        // Hide all sections
-        sections.forEach(section => {
-            section.classList.remove('active');
-        });
-
-        // Remove active class from all links
-        navLinks.forEach(l => l.classList.remove('active'));
-
-        // Activate appropriate section and link
-        if (activeSection) {
-            activeSection.classList.add('active');
-        }
-
-        if (activeLink) {
-            activeLink.classList.add('active');
-        }
-    }
-
-    // Initialize page
-    initializePage();
-
-    // Calendar functionality
+function initializeCalendar() {
     const calendarGrid = document.querySelector('.calendar-grid');
     const currentMonthElement = document.querySelector('.current-month');
     const prevBtn = document.querySelector('.prev-btn');
     const nextBtn = document.querySelector('.next-btn');
     const eventsContainer = document.getElementById('events-container');
+
+    if (!calendarGrid || !currentMonthElement || !prevBtn || !nextBtn || !eventsContainer) {
+        return;
+    }
 
     let currentDate = new Date();
     let currentMonth = currentDate.getMonth();
@@ -235,32 +225,4 @@ document.addEventListener('DOMContentLoaded', function() {
             eventsContainer.innerHTML = '<p>No upcoming events</p>';
         }
     }
-
-    // Simulate loading of content with fade effect
-    setTimeout(() => {
-        document.body.style.opacity = '1';
-    }, 100);
-});
-
-// Additional enhancements
-window.addEventListener('load', function() {
-    // Add scroll animation effects
-    const sections = document.querySelectorAll('.section');
-
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.animation = 'fadeIn 0.8s ease forwards';
-            }
-        });
-    }, observerOptions);
-
-    sections.forEach(section => {
-        observer.observe(section);
-    });
-});
+}
