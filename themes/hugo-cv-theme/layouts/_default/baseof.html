@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Description }}">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container nav-container">
+                <h1 class="site-title"><a href="/">{{ .Site.Title }}</a></h1>
+                <ul class="nav-menu">
+                    {{ $currentPage := .RelPermalink }}
+                    {{ range .Site.Menus.main }}
+                        <li class="nav-item">
+                            <a href="{{ .URL }}" class="{{ if eq $currentPage .URL }}active{{ end }}">{{ .Name }}</a>
+                        </li>
+                    {{ end }}
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; {{ now.Year }} {{ .Site.Params.author }}. All rights reserved.</p>
+            <div class="social-links">
+                {{ with .Site.Params.social.github }}
+                <a href="https://github.com/{{ . }}">GitHub</a>
+                {{ end }}
+                {{ with .Site.Params.social.linkedin }}
+                <a href="https://linkedin.com/in/{{ . }}">LinkedIn</a>
+                {{ end }}
+                {{ with .Site.Params.social.twitter }}
+                <a href="{{ . }}">Twitter</a>
+                {{ end }}
+                {{ with .Site.Params.social.email }}
+                <a href="mailto:{{ . }}">Email</a>
+                {{ end }}
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

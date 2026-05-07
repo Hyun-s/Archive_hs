@@ -1,0 +1,12 @@
+name = "Hugo CV Theme"
+license = "MIT"
+licenselink = "https://github.com/yourusername/hugo-cv-theme/blob/main/LICENSE"
+description = "A clean, modern theme for personal CV and portfolio websites"
+homepage = "https://github.com/yourusername/hugo-cv-theme"
+tags = ["cv", "portfolio", "personal", "minimal"]
+features = ["responsive", "clean", "modern"]
+min_version = "0.80.0"
+
+[author]
+  name = "Your Name"
+  homepage = "https://yourwebsite.com"
