@@ -297,6 +297,28 @@ header {
   font-weight: 600;
 }
 
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem 0;
+}
+
+.prev, .next {
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  background-color: white;
+  color: var(--primary-color);
+  font-weight: 600;
+  box-shadow: var(--box-shadow);
+}
+
+.page-number {
+  font-weight: 600;
+}
+
 /* Footer */
 footer {
   background-color: var(--dark-color);
@@ -324,28 +346,6 @@ footer {
 
 .social-links a:hover {
   color: var(--accent-color);
-}
-
-/* Pagination */
-.pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  margin: 3rem 0;
-}
-
-.prev, .next {
-  padding: 0.5rem 1rem;
-  border-radius: var(--border-radius);
-  background-color: white;
-  color: var(--primary-color);
-  font-weight: 600;
-  box-shadow: var(--box-shadow);
-}
-
-.page-number {
-  font-weight: 600;
 }
 
 /* Responsive Design */

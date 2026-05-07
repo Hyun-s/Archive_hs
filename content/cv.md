@@ -4,90 +4,58 @@ date: 2026-05-07T10:00:00+09:00
 draft: false
 ---
 
-# John Doe
-**Senior Software Engineer** | Seoul, South Korea | john.doe@example.com | +82 10-1234-5678 | [LinkedIn](https://linkedin.com/in/johndoe) | [GitHub](https://github.com/johndoe)
+# [Your Full Name]
+**[Your Job Title]** | [Your Location] | [Your Email] | [Your Phone] | [LinkedIn Profile] | [GitHub Profile]
 
 ## Professional Summary
 
-Experienced software engineer with 8+ years of expertise in full-stack development, cloud technologies, and agile methodologies. Passionate about creating scalable, user-friendly applications that solve real-world problems. Strong background in leading technical teams and mentoring junior developers.
+[Your professional summary - 2-3 sentences highlighting your key qualifications, experience, and what makes you unique as a professional.]
 
 ## Experience
 
-### Senior Software Engineer
-**Tech Solutions Inc.** – Seoul, South Korea  
-2022 – Present
+### [Job Title]  
+**[Company Name]** – [Location]  
+[Start Date] – [End Date or "Present"]
 
-- Led development of a customer-facing SaaS platform serving 50K+ users
-- Implemented microservices architecture reducing system downtime by 70%
-- Mentored 5 junior developers improving team productivity by 30%
-- Reduced application load time by 40% through performance optimizations
+- [Key achievement or responsibility]
+- [Key achievement or responsibility]
+- [Key achievement or responsibility]
 
-### Software Engineer
-**Digital Innovations Ltd.** – Seoul, South Korea  
-2020 – 2022
+### [Previous Job Title]  
+**[Previous Company Name]** – [Location]  
+[Start Date] – [End Date]
 
-- Developed RESTful APIs used by mobile and web applications
-- Collaborated with UX team to implement responsive web interfaces
-- Participated in code reviews and maintained coding standards
-- Contributed to open-source projects and internal tooling
-
-### Junior Developer
-**Startup Ventures** – Seoul, South Korea  
-2019 – 2020
-
-- Assisted in building MVP products for client projects
-- Participated in daily stand-ups and sprint planning
-- Gained experience in full development lifecycle
-- Supported QA team with bug fixes and feature enhancements
+- [Key achievement or responsibility]
+- [Key achievement or responsibility]
+- [Key achievement or responsibility]
 
 ## Education
 
-### Master of Computer Science
-**Seoul National University** – Seoul, South Korea  
-2017 – 2019
+### [Degree] in [Field of Study]  
+**[University Name]** – [Location]  
+[Year of Graduation]
 
-- Specialized in Software Engineering and Distributed Systems
-- Thesis: "Performance Optimization Techniques for Web Applications"
-
-### Bachelor of Science in Computer Engineering
-**Korea University** – Seoul, South Korea  
-2013 – 2017
-
-- Relevant Coursework: Data Structures, Algorithms, Database Systems
+- [Relevant coursework or achievements]
+- [Relevant coursework or achievements]
 
 ## Skills
 
-- **Programming Languages**: JavaScript, Python, Java, Go, TypeScript
-- **Web Technologies**: React, Node.js, Express, HTML5, CSS3, GraphQL
-- **Databases**: PostgreSQL, MongoDB, Redis
-- **Cloud & DevOps**: AWS, Docker, Kubernetes, CI/CD
-- **Tools & Platforms**: Git, Jira, Jenkins, Slack, VS Code
-- **Methodologies**: Agile, Scrum, TDD, Pair Programming
+- **Technical Skills**: [List relevant technical skills]
+- **Languages**: [List languages you speak]
+- **Tools & Technologies**: [List relevant tools and technologies]
 
 ## Projects
 
-### Portfolio Website
-A responsive personal portfolio website built with Hugo and deployed on GitHub Pages. Features include a clean design, mobile responsiveness, and SEO optimization.
+### [Project Name]  
+[Description of project and your role]
 
-### Task Management App
-Full-stack application for team collaboration with real-time updates, user authentication, and data synchronization across devices.
-
-### Data Visualization Dashboard
-Interactive dashboard for business intelligence with customizable charts and real-time data processing capabilities.
+### [Project Name]  
+[Description of project and your role]
 
 ## Certifications
 
-- AWS Certified Developer – Associate – Amazon Web Services – 2023
-- Google Cloud Professional Developer – Google Cloud – 2022
-- Scrum Master Certification – Scrum Alliance – 2021
+- [Certification Name] – [Issuing Organization] – [Year]
 
-## Professional Memberships
+## Additional Information
 
-- Member, Association for Computing Machinery (ACM)
-- Member, IEEE Computer Society
-
-## Languages
-
-- Korean (Native)
-- English (Fluent)
-- Japanese (Intermediate)
+- [Any additional relevant information]
