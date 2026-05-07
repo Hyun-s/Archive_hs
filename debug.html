@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Portfolio</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .section { display: none; padding: 20px; border: 1px solid #ccc; margin: 10px 0; }
+        .section.active { display: block; background-color: #f0f8ff; }
+        .nav-link { padding: 10px 15px; margin: 5px; background: #e0e0e0; text-decoration: none; }
+        .nav-link.active { background: #007bff; color: white; }
+    </style>
+</head>
+<body>
+    <h1>Debug Navigation Test</h1>
+
+    <nav>
+        <a href="#section1" class="nav-link active">Section 1</a>
+        <a href="#section2" class="nav-link">Section 2</a>
+        <a href="#section3" class="nav-link">Section 3</a>
+    </nav>
+
+    <div id="section1" class="section active">
+        <h2>Section 1 Content</h2>
+        <p>This is the first section content</p>
+    </div>
+
+    <div id="section2" class="section">
+        <h2>Section 2 Content</h2>
+        <p>This is the second section content</p>
+    </div>
+
+    <div id="section3" class="section">
+        <h2>Section 3 Content</h2>
+        <p>This is the third section content</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('.section');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    console.log('Clicked link:', this.href);
+                    console.log('Target hash:', this.getAttribute('href'));
+
+                    const targetId = this.getAttribute('href').substring(1);
+                    console.log('Target ID:', targetId);
+
+                    // Hide all sections
+                    sections.forEach(section => {
+                        section.classList.remove('active');
+                        console.log('Hidden section:', section.id);
+                    });
+
+                    // Remove active class from all links
+                    navLinks.forEach(l => l.classList.remove('active'));
+
+                    // Show target section
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        targetSection.classList.add('active');
+                        console.log('Showing section:', targetId);
+                    }
+
+                    // Make this link active
+                    this.classList.add('active');
+                    console.log('Active link:', this.textContent);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
