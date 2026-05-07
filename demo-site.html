@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eee;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 5px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to My Personal Portfolio</h1>
+            <p>Professional CV and portfolio website</p>
+        </header>
+
+        <nav>
+            <a href="#cv">CV</a>
+            <a href="#calendar">Calendar</a>
+            <a href="#about">About</a>
+            <a href="#blog">Blog</a>
+        </nav>
+
+        <section id="cv">
+            <h2>Curriculum Vitae</h2>
+            <h3>John Doe</h3>
+            <p><strong>Senior Software Engineer</strong> | Seoul, South Korea | john.doe@example.com | +82 10-1234-5678</p>
+
+            <h4>Professional Summary</h4>
+            <p>Experienced software engineer with 8+ years of expertise in full-stack development, cloud technologies, and agile methodologies...</p>
+
+            <h4>Experience</h4>
+            <p><strong>Senior Software Engineer</strong><br>
+            Tech Solutions Inc. – Seoul, South Korea<br>
+            2022 – Present</p>
+            <ul>
+                <li>Led development of a customer-facing SaaS platform serving 50K+ users</li>
+                <li>Implemented microservices architecture reducing system downtime by 70%</li>
+            </ul>
+
+            <h4>Education</h4>
+            <p><strong>Master of Computer Science</strong><br>
+            Seoul National University – Seoul, South Korea<br>
+            2017 – 2019</p>
+        </section>
+
+        <section id="calendar">
+            <h2>Personal Calendar</h2>
+            <p>Welcome to my personal calendar where I manage my schedule, appointments, and important dates.</p>
+
+            <h3>Upcoming Events</h3>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Event</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>May 15, 2026</td>
+                    <td>Team Meeting</td>
+                    <td>Monthly team sync with development team</td>
+                </tr>
+                <tr>
+                    <td>May 20, 2026</td>
+                    <td>Conference Registration</td>
+                    <td>Deadline for tech conference registration</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <h3>Hello, I'm John Doe</h3>
+            <p>I'm a passionate software engineer with over 8 years of experience building scalable web applications...</p>
+
+            <h4>My Journey</h4>
+            <p>My journey in technology began during my university years when I first discovered the power of creating digital solutions...</p>
+        </section>
+
+        <section id="blog">
+            <h2>Blog</h2>
+            <article>
+                <h3><a href="#">Welcome to My New Portfolio</a></h3>
+                <p>Welcome to my new personal portfolio website! This site showcases my professional background, projects, and thoughts on various topics...</p>
+                <a href="#" class="btn">Read more</a>
+            </article>
+            <article>
+                <h3><a href="#">Current Trends in Web Development</a></h3>
+                <p>The world of web development is constantly evolving, with new frameworks, tools, and methodologies emerging regularly...</p>
+                <a href="#" class="btn">Read more</a>
+            </article>
+        </section>
+    </div>
+</body>
+</html>
