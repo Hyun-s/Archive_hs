@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technical on Your Name - Personal Portfolio</title>
+    <link>https://yourusername.github.io/categories/technical/</link>
+    <description>Recent content in Technical on Your Name - Personal Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 May 2026 12:00:00 +0900</lastBuildDate>
+    <atom:link href="https://yourusername.github.io/categories/technical/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Current Trends in Web Development</title>
+      <link>https://yourusername.github.io/posts/tech-trends/</link>
+      <pubDate>Thu, 07 May 2026 12:00:00 +0900</pubDate>
+      <guid>https://yourusername.github.io/posts/tech-trends/</guid>
+      <description>The world of web development is constantly evolving, with new frameworks, tools, and methodologies emerging regularly. As a developer, staying current with these trends is essential for remaining competitive and effective in the field.&#xA;The Rise of Jamstack Static site generators and Jamstack architectures have gained significant traction in recent years. This approach separates the frontend from the backend, resulting in faster, more secure, and more scalable applications. Hugo, which I used to build this portfolio site, is a popular choice in this ecosystem.</description>
+    </item>
+  </channel>
+</rss>

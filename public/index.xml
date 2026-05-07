@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Your Name - Personal Portfolio</title>
+    <link>https://yourusername.github.io/</link>
+    <description>Recent content on Your Name - Personal Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 May 2026 12:00:00 +0900</lastBuildDate>
+    <atom:link href="https://yourusername.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Current Trends in Web Development</title>
+      <link>https://yourusername.github.io/posts/tech-trends/</link>
+      <pubDate>Thu, 07 May 2026 12:00:00 +0900</pubDate>
+      <guid>https://yourusername.github.io/posts/tech-trends/</guid>
+      <description>The world of web development is constantly evolving, with new frameworks, tools, and methodologies emerging regularly. As a developer, staying current with these trends is essential for remaining competitive and effective in the field.&#xA;The Rise of Jamstack Static site generators and Jamstack architectures have gained significant traction in recent years. This approach separates the frontend from the backend, resulting in faster, more secure, and more scalable applications. Hugo, which I used to build this portfolio site, is a popular choice in this ecosystem.</description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>https://yourusername.github.io/about/</link>
+      <pubDate>Thu, 07 May 2026 10:00:00 +0900</pubDate>
+      <guid>https://yourusername.github.io/about/</guid>
+      <description>Hello, I&amp;rsquo;m [Your Name] I&amp;rsquo;m a passionate professional with expertise in [your field]. With a strong foundation in [relevant skills], I strive to create impactful solutions through innovation and attention to detail.&#xA;My Journey My career path has taken me through various roles where I&amp;rsquo;ve developed a diverse skill set and deep understanding of [relevant industry/domain]. I&amp;rsquo;m constantly learning and adapting to new challenges in the ever-evolving landscape of [your field].</description>
+    </item>
+    <item>
+      <title>Calendar</title>
+      <link>https://yourusername.github.io/calendar/</link>
+      <pubDate>Thu, 07 May 2026 10:00:00 +0900</pubDate>
+      <guid>https://yourusername.github.io/calendar/</guid>
+      <description>Personal Calendar Welcome to my personal calendar where I manage my schedule, appointments, and important dates.&#xA;Upcoming Events Date Event Description [Date] [Event Name] [Description] [Date] [Event Name] [Description] [Date] [Event Name] [Description] Monthly Overview [Month Year] Week 1 [Event 1] [Event 2] Week 2 [Event 3] [Event 4] Week 3 [Event 5] [Event 6] Week 4 [Event 7] [Event 8] Schedule Management This section will be used to manage personal schedules and events.</description>
+    </item>
+    <item>
+      <title>Curriculum Vitae</title>
+      <link>https://yourusername.github.io/cv/</link>
+      <pubDate>Thu, 07 May 2026 10:00:00 +0900</pubDate>
+      <guid>https://yourusername.github.io/cv/</guid>
+      <description>[Your Full Name] [Your Job Title] | [Your Location] | [Your Email] | [Your Phone] | [LinkedIn Profile] | [GitHub Profile]&#xA;Professional Summary [Your professional summary - 2-3 sentences highlighting your key qualifications, experience, and what makes you unique as a professional.]&#xA;Experience [Job Title] [Company Name] – [Location]&#xA;[Start Date] – [End Date or &amp;ldquo;Present&amp;rdquo;]&#xA;[Key achievement or responsibility] [Key achievement or responsibility] [Key achievement or responsibility] [Previous Job Title] [Previous Company Name] – [Location]</description>
+    </item>
+    <item>
+      <title>Welcome to My New Portfolio</title>
+      <link>https://yourusername.github.io/posts/first-post/</link>
+      <pubDate>Thu, 07 May 2026 10:00:00 +0900</pubDate>
+      <guid>https://yourusername.github.io/posts/first-post/</guid>
+      <description>Welcome to my new personal portfolio website! This site showcases my professional background, projects, and thoughts on various topics.&#xA;I&amp;rsquo;ve built this site using Hugo, a powerful static site generator, with a clean and modern design that focuses on content and usability. The goal was to create a professional yet approachable space where I can share my experiences, insights, and interests.&#xA;In this blog, you&amp;rsquo;ll find posts about:&#xA;My professional journey and experiences Technical tutorials and learning journeys Personal reflections and thoughts Project showcases and case studies I hope you enjoy browsing through my content and find value in what I share.</description>
+    </item>
+  </channel>
+</rss>

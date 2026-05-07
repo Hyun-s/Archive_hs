@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome on Your Name - Personal Portfolio</title>
+    <link>https://yourusername.github.io/tags/welcome/</link>
+    <description>Recent content in Welcome on Your Name - Personal Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 May 2026 10:00:00 +0900</lastBuildDate>
+    <atom:link href="https://yourusername.github.io/tags/welcome/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome to My New Portfolio</title>
+      <link>https://yourusername.github.io/posts/first-post/</link>
+      <pubDate>Thu, 07 May 2026 10:00:00 +0900</pubDate>
+      <guid>https://yourusername.github.io/posts/first-post/</guid>
+      <description>Welcome to my new personal portfolio website! This site showcases my professional background, projects, and thoughts on various topics.&#xA;I&amp;rsquo;ve built this site using Hugo, a powerful static site generator, with a clean and modern design that focuses on content and usability. The goal was to create a professional yet approachable space where I can share my experiences, insights, and interests.&#xA;In this blog, you&amp;rsquo;ll find posts about:&#xA;My professional journey and experiences Technical tutorials and learning journeys Personal reflections and thoughts Project showcases and case studies I hope you enjoy browsing through my content and find value in what I share.</description>
+    </item>
+  </channel>
+</rss>

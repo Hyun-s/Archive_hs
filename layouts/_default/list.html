@@ -19,7 +19,7 @@
     </div>
 
     <!-- Pagination -->
-    {{ if $paginator.HasPages }}
+    {{ if $paginator.HasNext }}
     <nav class="pagination">
         {{ if $paginator.HasPrev }}
         <a href="{{ $paginator.Prev.URL }}" class="prev">← Previous</a>

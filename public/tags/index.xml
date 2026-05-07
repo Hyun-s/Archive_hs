@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Your Name - Personal Portfolio</title>
+    <link>https://yourusername.github.io/tags/</link>
+    <description>Recent content in Tags on Your Name - Personal Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 May 2026 12:00:00 +0900</lastBuildDate>
+    <atom:link href="https://yourusername.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Javascript</title>
+      <link>https://yourusername.github.io/tags/javascript/</link>
+      <pubDate>Thu, 07 May 2026 12:00:00 +0900</pubDate>
+      <guid>https://yourusername.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Trends</title>
+      <link>https://yourusername.github.io/tags/trends/</link>
+      <pubDate>Thu, 07 May 2026 12:00:00 +0900</pubDate>
+      <guid>https://yourusername.github.io/tags/trends/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web Development</title>
+      <link>https://yourusername.github.io/tags/web-development/</link>
+      <pubDate>Thu, 07 May 2026 12:00:00 +0900</pubDate>
+      <guid>https://yourusername.github.io/tags/web-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Introduction</title>
+      <link>https://yourusername.github.io/tags/introduction/</link>
+      <pubDate>Thu, 07 May 2026 10:00:00 +0900</pubDate>
+      <guid>https://yourusername.github.io/tags/introduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Welcome</title>
+      <link>https://yourusername.github.io/tags/welcome/</link>
+      <pubDate>Thu, 07 May 2026 10:00:00 +0900</pubDate>
+      <guid>https://yourusername.github.io/tags/welcome/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
