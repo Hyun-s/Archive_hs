@@ -4,22 +4,84 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link');
     const sections = document.querySelectorAll('.section');
 
+    // Handle navigation clicks
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
 
-            // Remove active class from all links and sections
+            const targetId = this.getAttribute('href').substring(1);
+
+            // Hide all sections
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Remove active class from all links
             navLinks.forEach(l => l.classList.remove('active'));
-            sections.forEach(s => s.classList.remove('active'));
 
             // Add active class to clicked link
             this.classList.add('active');
 
             // Show corresponding section
-            const targetId = this.getAttribute('href').substring(1);
-            document.getElementById(targetId).classList.add('active');
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
         });
     });
+
+    // Handle hash change (for direct URL access)
+    window.addEventListener('hashchange', function() {
+        const hash = window.location.hash.substring(1);
+        if (hash) {
+            // Hide all sections
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Remove active class from all links
+            navLinks.forEach(l => l.classList.remove('active'));
+
+            // Activate corresponding section and link
+            const targetSection = document.getElementById(hash);
+            const targetLink = document.querySelector(`[href="#${hash}"]`);
+
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
+
+            if (targetLink) {
+                targetLink.classList.add('active');
+            }
+        }
+    });
+
+    // Initialize based on current hash or default to first section
+    function initializePage() {
+        const hash = window.location.hash.substring(1);
+        const activeSection = hash ? document.getElementById(hash) : document.querySelector('.section');
+        const activeLink = hash ? document.querySelector(`[href="#${hash}"]`) : document.querySelector('.nav-link');
+
+        // Hide all sections
+        sections.forEach(section => {
+            section.classList.remove('active');
+        });
+
+        // Remove active class from all links
+        navLinks.forEach(l => l.classList.remove('active'));
+
+        // Activate appropriate section and link
+        if (activeSection) {
+            activeSection.classList.add('active');
+        }
+
+        if (activeLink) {
+            activeLink.classList.add('active');
+        }
+    }
+
+    // Initialize page
+    initializePage();
 
     // Calendar functionality
     const calendarGrid = document.querySelector('.calendar-grid');
