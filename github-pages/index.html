@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container nav-container">
+                <h1 class="site-title">Your Name</h1>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#" onclick="showSection('home')">Home</a></li>
+                    <li class="nav-item"><a href="#" onclick="showSection('cv')">CV</a></li>
+                    <li class="nav-item"><a href="#" onclick="showSection('calendar')">Calendar</a></li>
+                    <li class="nav-item"><a href="#" onclick="showSection('about')">About</a></li>
+                    <li class="nav-item"><a href="#" onclick="showSection('blog')">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="container hero-content">
+                    <h1>Welcome to My Personal Portfolio</h1>
+                    <p>Professional CV and portfolio website</p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary" onclick="showSection('cv')">View My CV</button>
+                        <button class="btn btn-secondary" onclick="showSection('blog')">Read My Blog</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container featured-content">
+                <section class="recent-posts">
+                    <h2>Latest Blog Posts</h2>
+                    <article class="post-preview">
+                        <h3><a href="#" onclick="showSection('blog')">Welcome to My New Portfolio</a></h3>
+                        <time>May 7, 2026</time>
+                        <p>Welcome to my new personal portfolio website...</p>
+                    </article>
+                    <article class="post-preview">
+                        <h3><a href="#" onclick="showSection('blog')">Current Trends in Web Development</a></h3>
+                        <time>May 7, 2026</time>
+                        <p>The world of web development is constantly evolving...</p>
+                    </article>
+                    <a href="#" onclick="showSection('blog')" class="view-all">View All Posts →</a>
+                </section>
+
+                <section class="quick-links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#" onclick="showSection('cv')">Professional CV</a></li>
+                        <li><a href="#" onclick="showSection('calendar')">Schedule</a></li>
+                        <li><a href="#" onclick="showSection('about')">About Me</a></li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+
+        <!-- CV Section -->
+        <section id="cv" class="section">
+            <div class="container content-wrapper">
+                <div class="page-header">
+                    <h1>Curriculum Vitae</h1>
+                </div>
+                <div class="post-content">
+                    <h2>John Doe</h2>
+                    <p><strong>Senior Software Engineer</strong> | Seoul, South Korea | john.doe@example.com | +82 10-1234-5678</p>
+
+                    <h3>Professional Summary</h3>
+                    <p>Experienced software engineer with 8+ years of expertise in full-stack development, cloud technologies, and agile methodologies...</p>
+
+                    <h3>Experience</h3>
+                    <p><strong>Senior Software Engineer</strong><br>
+                    Tech Solutions Inc. – Seoul, South Korea<br>
+                    2022 – Present</p>
+                    <ul>
+                        <li>Led development of a customer-facing SaaS platform serving 50K+ users</li>
+                        <li>Implemented microservices architecture reducing system downtime by 70%</li>
+                    </ul>
+
+                    <h3>Education</h3>
+                    <p><strong>Master of Computer Science</strong><br>
+                    Seoul National University – Seoul, South Korea<br>
+                    2017 – 2019</p>
+
+                    <h3>Skills</h3>
+                    <p>Programming Languages: JavaScript, Python, Java, Go, TypeScript<br>
+                    Web Technologies: React, Node.js, Express, HTML5, CSS3, GraphQL</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calendar Section -->
+        <section id="calendar" class="section">
+            <div class="container content-wrapper">
+                <div class="page-header">
+                    <h1>Calendar</h1>
+                </div>
+                <div class="post-content">
+                    <h2>Personal Calendar</h2>
+                    <p>Welcome to my personal calendar where I manage my schedule, appointments, and important dates.</p>
+
+                    <h3>Upcoming Events</h3>
+                    <table>
+                        <tr>
+                            <th>Date</th>
+                            <th>Event</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>May 15, 2026</td>
+                            <td>Team Meeting</td>
+                            <td>Monthly team sync with development team</td>
+                        </tr>
+                        <tr>
+                            <td>May 20, 2026</td>
+                            <td>Conference Registration</td>
+                            <td>Deadline for tech conference registration</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container content-wrapper">
+                <div class="page-header">
+                    <h1>About Me</h1>
+                </div>
+                <div class="post-content">
+                    <h2>Hello, I'm John Doe</h2>
+                    <p>I'm a passionate software engineer with over 8 years of experience building scalable web applications...</p>
+
+                    <h3>My Journey</h3>
+                    <p>My journey in technology began during my university years when I first discovered the power of creating digital solutions...</p>
+
+                    <h3>What I Do</h3>
+                    <p>As a software engineer, I'm involved in all aspects of the development lifecycle...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="section">
+            <div class="container content-wrapper">
+                <div class="page-header">
+                    <h1>Blog</h1>
+                </div>
+                <div class="content-list">
+                    <article class="content-item">
+                        <h2><a href="#" onclick="showPost('first-post')">Welcome to My New Portfolio</a></h2>
+                        <time>May 7, 2026</time>
+                        <p>Welcome to my new personal portfolio website! This site showcases my professional background, projects, and thoughts on various topics...</p>
+                        <a href="#" onclick="showPost('first-post')" class="read-more">Read more →</a>
+                    </article>
+                    <article class="content-item">
+                        <h2><a href="#" onclick="showPost('tech-trends')">Current Trends in Web Development</a></h2>
+                        <time>May 7, 2026</time>
+                        <p>The world of web development is constantly evolving, with new frameworks, tools, and methodologies emerging regularly...</p>
+                        <a href="#" onclick="showPost('tech-trends')" class="read-more">Read more →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Your Name. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+                <a href="#">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
